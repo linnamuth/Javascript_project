@@ -1,48 +1,3 @@
-const dataList = [
-    {
-        img: "https://assets.ajio.com/medias/sys_master/root/20220225/Svcr/6218ece1aeb26921afb7f739/-473Wx593H-463897470-peach-MODEL.jpg",
-        name: "pink T-shirt",
-        description : "Easy 15 days return and exchange. Return Policies may vary based on products and promotions. For full details on our Returns Policies, please",
-        price: "22"
-    },
-    {
-        img: "https://images.asos-media.com/products/new-look-oversized-t-shirt-in-black/202846122-1-black?$n_480w$&wid=476&fit=constrain",
-        name: "black T-shirt",
-        description : "New Look oversized t-shirt in black",
-        price: "15"
-    },
-    {
-        img: "https://putshirt.com/wp-content/uploads/2020/04/SLAYER-Heavy-Metal-Band-Hoodie.jpg",
-        name: "hodie",
-        description : "description:Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.",
-        price: "20"
-    },
-    {
-        img: "https://imusic.b-cdn.net/images/item/original/166/0803341578166.jpg?deftones-2022-around-the-fur-2022-hoodie&class=scaled",
-        name: "girl hodie",
-        description : "description:Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.",
-        price: "17"
-    },
-    {
-        img: "https://media.missguided.com/i/missguided/TJF25319_01",
-        name: "hoodie ",
-        description : "\"I have a good faith belief that use of the copyrighted materials described above as allegedly infringing is not authorized by the copyright owner, its agent, or the law.\" \"The information in this notification is accurate and I swear, under penalty of perjury, that I am the copyright owner or am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.\"",
-        price: "20"
-    },
-    {
-        img: "https://www.lulus.com/images/product/xlarge/4873910_962222.jpg?w=375&hdpi=1",
-        name: "grey hoodie",
-        description : "Be comfy cozy wherever you are when you're rockin' the NYTT Edinburgh Charcoal Grey Oversized Hoodie! Medium-weight French terry shapes this oversized",
-        price: "19"
-    },
-    {
-        img: "https://www.lulus.com/images/product/xlarge/5297770_946902.jpg",
-        name: "hoodie",
-        description : "Lulus Exclusive! Everyone says there's a time and place for everything, but when it comes to the Lulus Time For Cozy Charcoal Grey Oversized Pullover",
-        price: "21"
-    }
-] 
-
 
 const dialog = document.querySelector("#dailog_element");
 const table = document.getElementById("list-product");
@@ -55,7 +10,6 @@ const btn_submit = document.querySelector("#create");
 const form_header=document.querySelector(".form-title");
 // console.log(dialog)
 let arrayOfproduct= []
-
 // function show________________________________________________
 function show(element){
     element.style.display="block"
@@ -67,9 +21,9 @@ function hide(element){
 }
 
 // save to local storage_______________________________________________
-function saveProduct(data=arrayOfproduct){
+function saveProduct(){
     // console.log('user is saving')
-    localStorage.setItem("arrayOfproduct" ,JSON.stringify(data));
+    localStorage.setItem("arrayOfproduct" ,JSON.stringify(arrayOfproduct));
     // console.log(localStorage)
 }
 
@@ -94,9 +48,6 @@ function displayList() {
     
     table.appendChild(productTable);
     let index = 0
-    //Change this to use local data.
-    saveProduct(dataList);
-    loadProduct()
     for(let product of arrayOfproduct) {
         
         let tr = document.createElement("tr");
@@ -189,7 +140,9 @@ function onCreate(event){
     // validation form
     if (document.querySelector("#img").value !='' && document.querySelector("#Name").value !='' && document.querySelector("#descrip").value !='' && document.querySelector("#price").value!=""){
         // check if event work  on edit or create_______________________________
-        if(productIndex !==null){   
+        console.log(document.querySelector("#img").parentElement)
+        // product.img=document.querySelector("#img").value;
+            if(productIndex !==null){   
             // for edit product_____________________________________
             let product = arrayOfproduct[productIndex];
             product.img=document.querySelector("#img").value;
@@ -235,6 +188,7 @@ function editProduct(event){
     show(dialog);
 }
 // for call function _______________________________________________
-loadProduct();
-saveProduct();
+// loadProduct();
+// saveProduct();
 displayList();
+ 

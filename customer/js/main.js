@@ -23,7 +23,6 @@ function loadProduct(){
 
 
 
-
 function addProduct(){
     // loadProduct();
     // let container = document.querySelector("#container");
