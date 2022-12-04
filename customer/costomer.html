@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="head">
+        <form action="#" id="search">
+            <img id="logo" src="image/logo.png" alt="">
+            <input type="search" id="research" name="research" placeholder="search here">
+        </form> 
+        
+        <div class="home">
+            <p class="ho"  >HOME </p>
+            <p class="ho">LOGIN</p>
+            <p class="ho">ORDER</p>
+        </div>
+    </div>
+    <h1 class="center">T-SHIRT</h1>
+    <div id="detail-dialog" style="display:none ;" >
+        <dialog open>
+            <div class="detail-all">
+                
+                <!-- <header id="edit-header">DETAIL ALL PRODUCT</header>
+                    <section>
+                        <img src="image/blue t-shirt.png" alt="" width="10%">
+                        <p class="name-detail">Name</p>
+                        <p class="de-detail">Description</p>
+                        <p>price</p>
+                        <button>buy</button>
+                    </section>
+                    <menu>
+                        < When clicking on button,  call the right function  -->
+                        <!-- <button onclick="onCancel(event)" id="cancal-product">Cancel</button> --> 
+                        
+                        <!-- When clicking on button,  call the right function  -->
+                        <!-- <button onclick="createProduct(event)" id="create-product">Create</button> -->
+             </div>
+                
+        </dialog>
+    <h1 class="pro">DETAIL PRODUCT</h1>
+    <div id="dailog_buy" style="display: none;">
+        <dialog open>
+          <form action="" method="get" id="addItem">
+            <h1 class="form-title">CREATE</h1>
+            <!-- <div class="form-edit">edit</div> -->
+            
+            <div class="first-name">
+              <label for="#">Name:</label>
+              <input type="text" id="Name" placeholder="name">
+            </div>
+            <div class="last-name">
+              <label for="#">Description:</label>
+              <input type="text" id="descrip" placeholder="Description">
+            </div>
+            <div class="email">
+              <label for="#">Price:</label>
+              <input type="number" id="price" placeholder="price">
+            </div>
+            <div class="img">
+              <label for="#">IMAGE</label>
+              <input type="text" id="img" placeholder="Enter Image URL">
+            </div>
+            <div class="con">
+              <button onclick="onCancel(event)" id="cancel">Cancel</button>
+              <button onclick="onCreate(event)" id="create">Create</button>
+              <!-- <button onclick="edit(event)" id="edit">Edit</button> -->
+              
+            </div>
+          </form>
+        </dialog>
+      </div>        
+    </div>
+    <div id="container">
+        <div class="search">
+
+        </div>
+    </div>
+    
+    
+    <!-- <div class="search">
+        
+            <div class="ptoto">
+                <div class="nav">
+                    <img  src="image/ima.png" width="30%">
+                </div>   
+                <p>Black and White Round Neck Half Sleeve T-shirt  for women<br> Solid 100%</p>
+                <p>Price:15$</p>
+                <button>BUY</button>   
+            </div>
+            <div class="ptoto">
+                <div class="nav">
+                    <img  src="image/grey.png" width="100%">
+                </div>    
+                <p >banded T-shirts for mens</p>
+                <p>Price:15$</p>
+                <button>BUY</button> 
+            </div>
+            <div class="ptoto">
+                <div class="nav">
+                    <img  src="image/pink.png" width="100%">
+                </div>     
+                <p>Blue T-shirt  for women Solid 100%</p>
+                <p>Price:10$</p>
+                <button>BUY</button>   
+            </div>
+            <div class="ptoto">
+                <div class="nav">
+                    <img  src="image/hodie white.png" width="100%">
+                </div>    
+                    
+                <p>Yellow T-shirt </p>
+                <p>Price:15$</p>
+                <button>BUY</button> 
+            </div> 
+        <div class="search">
+            
+        </div>
+            
+            
+        </div>
+    </div> 
+    <div class="contain">
+        <div class="ptoto">
+            <div class="nav">
+                <img  src="image/grey.png" width="100%">
+            </div>    
+            <p>Girl T-shirt </p>
+            <p>Price:14$</p>
+            <button>BUY</button>
+        </div> 
+        <div class="ptoto">
+            <div class="nav">
+                <img  src="image/yellow .png" width="100%">
+            </div>     
+            <p>Grey T-shirt </p>
+            <p>Price:15$</p>
+            <button>BUY</button>
+                
+            
+        </div> 
+        <div class="ptoto">
+            <div class="nav">
+                <img  src="image/white.png" width="100%">
+            </div>    
+                
+            <p>Hodie White </p>
+            <p>Price:18$</p>
+            <button>BUY</button>
+               
+            
+        </div> 
+        <div class="ptoto">
+            <div class="nav">
+                <img  src="image/img8.png" width="100%">
+            </div>    
+            <p>Hodie Teen Girl Harajuku cute cat </p>
+            <p>Price:15$</p>
+            <button>BUY</button>
+        </div> 
+    </div> -->
+    <div class="card">
+
+    </div>
+    
+    
+    
+    <div class="foo">
+        <footer>
+            <h1>ONLINE SHOP</h1> 
+        <div class="footer1">
+            <h2>About us</h2>
+            <p>About ONLINE SHOP</p>
+            <p>About ONLINE GROUP</p>
+        </div>
+        <div class="footer2">
+            <h2>Customer services</h2>
+            <p>Help Center</p>
+            <p>Report abuse</p>
+            <p>Open a case</p>
+        </div>
+        <div class="footer3">
+            <h2>Source on ONLINE.com</h2>
+            <p>Resources</p>
+            <p>All categoriees</p>
+            <p>Request for ship</p>
+        </div>
+        <div class="footer4">
+            <h2>Sell on ONLINE SHOP.com</h2>
+            <p>Supplier memberships</p>
+            <p>learning Center</p>
+            <p>Parter program</p>
+        </div>
+        </footer>
+        <div class="contect">
+            <h1>Contect us</h1>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram "></a>
+            <a href="#" class="fa fa-skype "></a>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
+
+
+
+

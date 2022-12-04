@@ -1,0 +1,253 @@
+.image, .logo{
+    width:25%;
+    border-radius: 50%;
+}
+.header{
+    display: flex;
+    margin-left: 20%;
+    gap: 70px;
+    cursor: pointer;
+    margin-top: 20px;  
+    
+}
+.head{
+    display: flex;
+    background-color: rgb(112, 202, 216);
+    /* padding: 10px; */
+}
+body{
+    font-family: sans-serif;
+    /* background-color: rgb(246, 230, 211); */
+}
+select{
+    padding: 20px;
+}
+input[type="search"]{
+    margin-top: 30px;
+    padding: 10px;
+    width: 70vh;
+    height: 40px;
+    border: none;
+ } 
+
+
+.center{
+    justify-content: center;
+    text-align: center;
+}
+
+
+button{
+    padding: 5px;
+    width: 15%;
+    cursor: pointer;
+}
+.nav{
+    width: 60%;
+    background-color: rgb(252, 249, 249);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+footer{
+    display: flex;
+    gap: 50px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.contect{
+    justify-content: center;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+}
+.contain{
+    display: flex;
+}
+#img-add{
+    width: 100%;
+    height: 40vh;
+}
+form{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+#selet{
+    padding: 5px;
+    width: 20%;
+}
+.search{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.home{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 400px;
+    gap: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.foo{
+    background-color: rgb(194, 202, 199);
+    margin-top: 10%;
+}
+button{
+    width: 20%;
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#logo{
+    padding: 20px;
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 30%;
+}
+.showcard{
+    background-color: aliceblue;
+    width: 30%;
+    padding: 30px;
+}
+#showcard{
+    text-align: center;
+}
+input[type="text"],input[type="number"]{
+    width: 70%;
+    padding: 10px;
+}
+
+/* ================================================================== */
+dialog {
+    position: fixed;
+    top: 10vh;
+    left: 20%;
+    width: 60%;
+    z-index: 100;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+dialog header {
+    background-color: rgb(45, 45, 247);
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 1rem;
+}
+dialog section {
+    padding: 1rem;
+} 
+dialog menu {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+} 
+dialog label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+} 
+
+input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    background-color: #f0e6fd;
+    outline: none;
+    border-color: var(--main-color-light);
+}
+menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+menu button{
+    background: blue;
+    padding: 10px;
+    width: 10%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#detail{
+    background-color: blue;
+    border: none;
+    width: 60%;
+    padding: 8px;
+    color: white;
+    
+}
+#detail-dialog{
+    background-color: rgb(227, 223, 223);
+    color: white;
+    font-size: 1.25rem;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: auto;
+}
+#images{
+    width: 50%;
+    margin-left: 70px;
+}
+p{
+    color: black;
+}
+.pro{
+    text-align: center;
+    color: black;
+}
+#images{
+    display: block;
+}
+.ho:hover{
+    background-color: #00aff0;
+    padding: 10px;
+    border-radius: 10px;
+}

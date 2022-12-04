@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELLER</title>
+  <link rel="stylesheet" href="seller/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="head">
+    <div class="image">
+      <img src="seller/image/logo.png" alt="">
+    </div>
+    <div class="sell">
+      <a class="seller" href="../seller/index.html">SELLER </a>
+      <a class="seller" href="customer/costomer.html">CUSTOMER</a>
+    </div>
+  </div>
+  <h1>WELCOME TO ONLINE SHOP</h1>
+  <button id ="btn-add-product">Add new produt</button>
+  <div id="dailog_element" style="display: none;">
+    <dialog open>
+      <form action="" method="get" id="addItem">
+        <h1 class="form-title">CREATE</h1>
+        <!-- <div class="form-edit">edit</div> -->
+        
+        <div class="first-name">
+          <label for="#">Name:</label>
+          <input type="text" id="Name" placeholder="name">
+        </div>
+        <div class="last-name">
+          <label for="#">Description:</label>
+          <input type="text" id="descrip" placeholder="Description">
+        </div>
+        <div class="email">
+          <label for="#">Price:</label>
+          <input type="number" id="price" placeholder="price">
+        </div>
+        <div class="img">
+          <label for="#">IMAGE</label>
+          <input type="text" id="img" placeholder="Enter Image URL">
+        </div>
+        <div class="con">
+          <button onclick="onCancel(event)" id="cancel">Cancel</button>
+          <button onclick="onCreate(event)" id="create">Create</button>
+          <!-- <button onclick="edit(event)" id="edit">Edit</button> -->
+          
+        </div>
+      </form>
+    </dialog>
+  </div>
+  <table id="list-product">
+    <thead>
+      <tr>
+        <th>IMAGES</th>
+        <th>NAME</th>
+        <th>DESCRIPTION</th>
+        <th>PRICE</th>
+        <th>Ation</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <!-- for dislpaly table -->
+    </tbody>
+
+  </table>
+  
+
+</body>
+<script src="seller/js/main.js"></script>
+
+</html>
