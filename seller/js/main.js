@@ -67,9 +67,9 @@ function hide(element){
 }
 
 // save to local storage_______________________________________________
-function saveProduct(){
+function saveProduct(data=arrayOfproduct){
     // console.log('user is saving')
-    localStorage.setItem("arrayOfproduct" ,JSON.stringify(arrayOfproduct));
+    localStorage.setItem("arrayOfproduct" ,JSON.stringify(data));
     // console.log(localStorage)
 }
 
@@ -95,7 +95,9 @@ function displayList() {
     table.appendChild(productTable);
     let index = 0
     //Change this to use local data.
-    for(let product of dataList) {
+    saveProduct(dataList);
+    loadProduct()
+    for(let product of arrayOfproduct) {
         
         let tr = document.createElement("tr");
         tr.id = "table-row";
